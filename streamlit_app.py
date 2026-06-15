@@ -35,7 +35,7 @@ st.markdown("""
         border: 2px solid #d7ccc8;
     }
     </style>
-""", unsafe_style_html=True)
+""", unsafe_allow_html=True)
 
 # App Title & Header
 st.title("📊 Context-Based Financial Statement Analyzer")
@@ -96,11 +96,11 @@ if st.button("Analyze Sentiment", type="primary"):
                 with col1:
                     st.markdown("**Predicted Sentiment:**")
                     if sentiment == "positive":
-                        st.markdown('<div class="sentiment-box positive-box">🟢 Positive</div>', unsafe_style_html=True)
+                        st.markdown('<div class="sentiment-box positive-box">🟢 Positive</div>', unsafe_allow_html=True)
                     elif sentiment == "negative":
-                        st.markdown('<div class="sentiment-box negative-box">🔴 Negative</div>', unsafe_style_html=True)
+                        st.markdown('<div class="sentiment-box negative-box">🔴 Negative</div>', unsafe_allow_html=True)
                     else:
-                        st.markdown('<div class="sentiment-box neutral-box">⚪ Neutral</div>', unsafe_style_html=True)
+                        st.markdown('<div class="sentiment-box neutral-box">⚪ Neutral</div>', unsafe_allow_html=True)
                         
                     st.metric(label="Classifier Confidence Score", value=f"{confidence}%")
                     st.progress(confidence / 100.0)
