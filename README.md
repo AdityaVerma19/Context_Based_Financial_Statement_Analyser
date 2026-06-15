@@ -1,4 +1,4 @@
-<img width="1915" height="1068" alt="image" src="https://github.com/user-attachments/assets/a68784fb-2557-4533-894d-18dbbc26bfa6" /># Financial Sentiment Analysis & Reasoning Pipeline
+# Financial Sentiment Analysis & Reasoning Pipeline
 
 A hybrid, state-of-the-art framework for financial sentiment classification and explanation generation. This system combines **FinBERT embeddings**, a **Logistic Regression classifier**, and a **large language model (LLM - Qwen/Qwen3-0.6B)** to classify financial statements, correct keyword-based classification biases, and generate explanations.
 
