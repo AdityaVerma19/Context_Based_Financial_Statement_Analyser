@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Hugging Face caches
+.cache/
+huggingface/
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE files
+.vscode/
+.idea/
+
+# Local data & logs
+*.log
+outputs/predictions.csv
+
+# Processed embeddings and splits (regenerated via scripts)
+data/processed/*.npy
+data/processed/*.csv
