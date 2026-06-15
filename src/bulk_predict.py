@@ -1,5 +1,5 @@
 import pandas as pd
-from predict import predict_sentiment
+from .predict import predict_sentiment
 
 df = pd.read_csv(
     "data/raw/influencer_statements.csv"

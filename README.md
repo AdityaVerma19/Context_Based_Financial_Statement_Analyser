@@ -130,7 +130,7 @@ python src/evaluate.py
 ### 5. Run Pipeline Verification (Optional)
 To verify that the complete end-to-end classification and reasoning correction pipeline is running correctly:
 ```bash
-python src/test.py
+python -m src.test
 ```
 
 ### 6. Run the Interactive Terminal Application
@@ -155,8 +155,3 @@ Outputs will be written to `outputs/predictions.csv`.
 ---
 
 ## 🌐 Live Link (Streamlit Community Cloud)- https://contextbasedfinancialstatementanalyser-cxsfvbbreq9bfn4mn9hmvp.streamlit.app/
-
-1. **`load.py`**: A temporary scratch script used to preview the influencer CSV dataset.
-2. **`src/finbert_predict.py`**: Redundant prediction file, completely replaced by `src/predict.py`.
-3. **`flow_of_project.txt`**: Temporary flow diagram text, replaced by the Mermaid flowchart in this README.
-4. **`image.png`**: Local screenshot/image file not used in the codebase.

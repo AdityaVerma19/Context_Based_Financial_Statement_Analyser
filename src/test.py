@@ -1,4 +1,4 @@
-from pipeline import analyze
+from .pipeline import analyze
 
 texts = [
     "Nvidia reported record quarterly revenue",

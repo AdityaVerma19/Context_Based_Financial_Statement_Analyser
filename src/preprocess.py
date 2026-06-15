@@ -1,5 +1,5 @@
 from sklearn.model_selection import train_test_split
-from data_loader import load_phrasebank
+from .data_loader import load_phrasebank
 
 df = load_phrasebank(
     "data/raw/Sentences_AllAgree.txt"

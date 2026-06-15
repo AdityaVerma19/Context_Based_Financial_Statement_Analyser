@@ -1,8 +1,8 @@
-from src.predict import (
+from .predict import (
     predict_sentiment
 )
 
-from src.fingpt_explain import (
+from .fingpt_explain import (
     explain_sentiment
 )
 
