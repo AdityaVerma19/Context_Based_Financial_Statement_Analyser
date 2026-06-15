@@ -1,4 +1,4 @@
-# Financial Sentiment Analysis & Reasoning Pipeline
+<img width="1915" height="1068" alt="image" src="https://github.com/user-attachments/assets/a68784fb-2557-4533-894d-18dbbc26bfa6" /># Financial Sentiment Analysis & Reasoning Pipeline
 
 A hybrid, state-of-the-art framework for financial sentiment classification and explanation generation. This system combines **FinBERT embeddings**, a **Logistic Regression classifier**, and a **large language model (LLM - Qwen/Qwen3-0.6B)** to classify financial statements, correct keyword-based classification biases, and generate explanations.
 
@@ -154,23 +154,8 @@ Outputs will be written to `outputs/predictions.csv`.
 
 ---
 
-## 🌐 Deploy to a Live Link (Streamlit Community Cloud)
+## 🌐 Live Link (Streamlit Community Cloud)- https://contextbasedfinancialstatementanalyser-cxsfvbbreq9bfn4mn9hmvp.streamlit.app/
 
-You can host this project online for free in 1 click, allowing anyone to visit a public URL, input text, and view results:
-
-1. **Push your code to GitHub** (make sure `streamlit_app.py` and the updated `requirements.txt` are pushed).
-2. Visit **[Streamlit Community Cloud](https://share.streamlit.io)** and log in using your GitHub account.
-3. Click the **New app** button.
-4. Select your Repository (`Context_Based_Financial_Statement_Analyser`), branch (`main`), and set the main file path to **`streamlit_app.py`**.
-5. Click **Deploy!**
-
-Streamlit Cloud will automatically provision a container, install all requirements, load the models, and deploy the application to a live public URL (e.g. `https://financial-analyzer.streamlit.app`).
-
----
-
-## 🗑️ Files to Remove
-
-The following files are obsolete, redundant, or temporary scratch files. **Please delete these files before pushing to GitHub:**
 1. **`load.py`**: A temporary scratch script used to preview the influencer CSV dataset.
 2. **`src/finbert_predict.py`**: Redundant prediction file, completely replaced by `src/predict.py`.
 3. **`flow_of_project.txt`**: Temporary flow diagram text, replaced by the Mermaid flowchart in this README.
