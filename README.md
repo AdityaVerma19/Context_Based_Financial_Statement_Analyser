@@ -66,7 +66,8 @@ The following is a curated guide to the active files in this repository:
 
 ### Root Application Files
 * **[app.py](./app.py)**: The main interactive terminal application. It accepts user input, runs the pipeline, and prints the final sentiment, confidence, and LLM-generated explanation.
-* **[requirements.txt](./requirements.txt)**: Specifies python dependencies including `torch`, `transformers`, `scikit-learn`, `joblib`, and `accelerate`.
+* **[streamlit_app.py](./streamlit_app.py)**: The interactive Web User Interface built with Streamlit. It displays sentiment indicators, confidence meters, reasoning explanations, and example headlines in a clean browser dashboard.
+* **[requirements.txt](./requirements.txt)**: Specifies python dependencies including `torch`, `transformers`, `scikit-learn`, `joblib`, `accelerate`, and `streamlit`.
 
 ### Source Code (`src/`)
 * **[src/data_loader.py](./src/data_loader.py)**: Handles loading and cleaning of the Financial Phrasebank dataset (`Sentences_AllAgree.txt`).
@@ -132,18 +133,38 @@ To verify that the complete end-to-end classification and reasoning correction p
 python src/test.py
 ```
 
-### 6. Run the Interactive Application
+### 6. Run the Interactive Terminal Application
 Launch the terminal application to analyze statements interactively:
 ```bash
 python app.py
 ```
 
-### 7. Run Bulk Predictions
+### 7. Run the Interactive Web UI locally
+Launch the web UI dashboard in your local web browser:
+```bash
+streamlit run streamlit_app.py
+```
+
+### 8. Run Bulk Predictions
 To run prediction analysis over the batch dataset `influencer_statements.csv`:
 ```bash
 python src/bulk_predict.py
 ```
 Outputs will be written to `outputs/predictions.csv`.
+
+---
+
+## 🌐 Deploy to a Live Link (Streamlit Community Cloud)
+
+You can host this project online for free in 1 click, allowing anyone to visit a public URL, input text, and view results:
+
+1. **Push your code to GitHub** (make sure `streamlit_app.py` and the updated `requirements.txt` are pushed).
+2. Visit **[Streamlit Community Cloud](https://share.streamlit.io)** and log in using your GitHub account.
+3. Click the **New app** button.
+4. Select your Repository (`Context_Based_Financial_Statement_Analyser`), branch (`main`), and set the main file path to **`streamlit_app.py`**.
+5. Click **Deploy!**
+
+Streamlit Cloud will automatically provision a container, install all requirements, load the models, and deploy the application to a live public URL (e.g. `https://financial-analyzer.streamlit.app`).
 
 ---
 
